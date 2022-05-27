@@ -1,0 +1,26 @@
+/* @font-face {
+  font-family: "Hancom";
+  font-weight: 700;
+  /* src: url("@assets/fonts/HancomMalangMalang-Regular.otf") format("otf"); */
+/* src: url("./HancomMalangMalang-Regular.ttf") format("woff");
+  src: url("./HancomMalangMalang-Regular.ttf") format("woff2"); */
+/* src: local(""), url("./HancomMalangMalang-Regular.woff") format("woff"); */
+/* }  */
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-v27-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/noto-sans-v27-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/noto-sans-v27-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/noto-sans-v27-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/noto-sans-v27-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/noto-sans-v27-latin-regular.svg#NotoSans") format("svg"); /* Legacy iOS */
+}

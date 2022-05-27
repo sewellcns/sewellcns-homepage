@@ -1,3 +1,9 @@
+# SEWELLCNS 홈페이지 입니다.
+
+## 포트 설정
+
+"start": "set PORT=3030 && node ./bin/www",
+
 ### Node Express template project
 
 This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
