@@ -310,6 +310,121 @@
   font-weight: 400;
 }
 
+.sub2-overview {
+  display: block !important;
+  padding: 3.5em 0 4.5em 0 !important;
+}
+
+.overview-intro {
+  font-size: 2em;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.4px;
+  margin-bottom: 1.25em;
+}
+
+.overview-grid {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.overview-card {
+  flex: 1;
+}
+
+.overview-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #b7b7b7;
+}
+
+.overview-table th,
+.overview-table td {
+  border: 1px solid #b7b7b7;
+  vertical-align: middle;
+  line-height: 1.35;
+  padding: 10px 12px;
+  color: #222;
+}
+
+.company-table th {
+  width: 130px;
+  text-align: center;
+  font-weight: 700;
+  background: #e6e6e6;
+}
+
+.company-table td {
+  background: #f8f8f8;
+  font-weight: 700;
+}
+
+.competency-title {
+  text-align: center !important;
+  margin: 0 0 8px 0 !important;
+  font-size: 1.95em !important;
+  color: #111;
+  letter-spacing: -0.3px;
+}
+
+.competency-table thead th {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 11px 10px;
+}
+
+.competency-table thead th:first-child {
+  width: 31%;
+  background: #5f5f5f;
+}
+
+.competency-table thead th:last-child {
+  background: #f17912;
+}
+
+.competency-table tbody th {
+  text-align: center;
+  background: #efefef;
+  font-size: 1.03em;
+  font-weight: 700;
+  color: #5b5b5f;
+}
+
+.competency-table tbody th.accent-blue {
+  color: #0072d8;
+  font-weight: 800;
+}
+
+.competency-table tbody td {
+  background: #e9e6ef;
+  padding: 8px 12px 8px 18px;
+}
+
+.competency-table ul {
+  margin: 0;
+  padding-left: 1.15em;
+}
+
+.competency-table li {
+  list-style: disc;
+  margin-bottom: 2px;
+  font-size: 0.96em;
+  line-height: 1.35;
+}
+
+.competency-footnote {
+  margin-top: 8px;
+  font-size: 0.86em;
+  color: #666;
+  line-height: 1.35;
+}
+
 /* Image */
 
 .image {
@@ -509,11 +624,11 @@ table ul .small {
 }
 
 /*********************************************************************************/
-/* ?ïÑÏπ¥Îç∞ÎØ?                                                                        */
+/* ???????                                                                        */
 /*********************************************************************************/
 
 /*********************************************************************************/
-/* Ïª®ÏÑ§?åÖ                                                                        */
+/* ?????                                                                        */
 /*********************************************************************************/
 .consulting_box {
   border: 1px solid #dadada;
@@ -544,7 +659,7 @@ table ul .small {
   padding-left: 25px;
 }
 /*********************************************************************************/
-/* ?Éâ?ÉÅÎ∞ïÏä§                                                                        */
+/* ????????                                                                        */
 /*********************************************************************************/
 
 .bg_blue {
