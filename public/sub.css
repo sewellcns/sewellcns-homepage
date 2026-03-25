@@ -257,6 +257,21 @@
   display: flex;
 }
 
+/* sub5_3(교육과정별 안내)에서만 가로폭을 넓게 사용 */
+body .academy-course-guide {
+  width: 100%;
+}
+
+body #SubPageWide .academy-course-guide {
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  body #SubPageWide {
+    padding: 5em 5em;
+  }
+}
+
 #container {
   display: flex;
 }
@@ -698,4 +713,255 @@ ul.list li:first-child {
   font-weight: 700;
   vertical-align: middle;
   text-align: center;
+}
+
+.academy-overview {
+  width: 100%;
+}
+
+.academy-overview-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 1.2em;
+}
+
+.academy-overview-header h3 {
+  font-size: 2.1em;
+  font-weight: 700;
+  color: #000;
+  margin: 0.05em 0 0 0;
+}
+
+.academy-overview-thumb {
+  width: 240px;
+  height: auto;
+  border: 1px solid #ececec;
+}
+
+.academy-bullet-title {
+  margin: 0.8em 0 0.5em 0;
+  font-size: 2em;
+  color: #000;
+  line-height: 1.35;
+}
+
+.academy-bullet-title i {
+  color: #8f0000;
+  font-size: 0.85em;
+  margin-right: 10px;
+}
+
+.academy-course-block {
+  margin: 0 0 1.15em 0;
+  padding-left: 1.8em;
+}
+
+.academy-course-block h4 {
+  font-size: 2.05em;
+  font-weight: 700;
+  margin: 0.45em 0 0.42em 0;
+  color: #000;
+  line-height: 1.3;
+}
+
+.academy-highlight {
+  font-size: 1.85em;
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.academy-spaced {
+  margin-top: 1.1em;
+}
+
+.academy-basic-list {
+  margin: 0.2em 0 0 3.3em;
+  padding: 0;
+}
+
+.academy-basic-list li {
+  list-style: disc;
+  font-size: 1.95em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.1em;
+  color: #000;
+}
+
+.academy-course-guide {
+  width: 100%;
+}
+
+.academy-course-guide {
+  /* sub5_3 ?????????? ??????? ???????? ???? ???? */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.academy-course-guide .academy-guide-grid {
+  /* ???? ??? ?????? ????? ?????? ???? ?? ???? */
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.academy-course-guide .academy-guide-aside {
+  order: 3;
+  flex: 1 1 100%;
+  min-width: 0;
+  padding-top: 18px;
+}
+
+.academy-course-guide .academy-guide-tables {
+  flex: 1 1 460px;
+  width: auto;
+}
+
+.academy-course-guide .academy-fee-table thead th {
+  /* ??? ?????? ????????? ????? */
+  padding: 12px 8px;
+}
+
+.academy-guide-top {
+  margin: 0 0 1.4em 1.25em;
+  padding: 0;
+}
+
+.academy-guide-top li {
+  list-style: disc;
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.35;
+  margin-bottom: 0.25em;
+}
+
+.academy-guide-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.academy-guide-tables {
+  width: 345px;
+  flex: 0 0 345px;
+}
+
+.academy-table-unit {
+  text-align: right;
+  font-size: 0.95em;
+  color: #666;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.academy-fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #7f7f7f;
+  margin: 0;
+  background: #fff;
+}
+
+.academy-fee-table th,
+.academy-fee-table td {
+  border: 1px solid #7f7f7f;
+  padding: 10px 8px;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+
+.academy-fee-table thead th {
+  background: #cfcfcf;
+  text-align: center;
+  font-size: 1.05em;
+}
+
+.academy-fee-table thead th:nth-child(1) {
+  width: 46%;
+}
+
+.academy-fee-table thead th:nth-child(2) {
+  width: 14%;
+}
+
+.academy-fee-table thead th:nth-child(3),
+.academy-fee-table thead th:nth-child(4) {
+  width: 20%;
+}
+
+.academy-fee-accent {
+  color: #b00000;
+  font-weight: 800;
+}
+
+.academy-cell-center {
+  text-align: center;
+}
+
+.academy-guide-aside {
+  flex: 1;
+  min-width: 240px;
+  padding-top: 22px;
+}
+
+.academy-aside-block {
+  padding: 6px 0;
+}
+
+.academy-aside-title {
+  font-weight: 900;
+  color: #000;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.academy-aside-title i {
+  color: #8f0000;
+  font-size: 0.95em;
+  margin-right: 10px;
+}
+
+.academy-aside-text {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-size: 1.15em;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.academy-aside-list {
+  margin: 0 0 0 1.1em;
+  padding: 0;
+}
+
+.academy-aside-list li {
+  list-style: disc;
+  color: #0d61c9;
+  font-weight: 900;
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+.academy-aside-block-spaced {
+  margin-top: 18px;
+}
+
+@media (max-width: 1100px) {
+  .academy-guide-grid {
+    flex-wrap: wrap;
+  }
+  .academy-guide-tables {
+    flex: 1 1 420px;
+    width: auto;
+  }
+  .academy-guide-aside {
+    flex: 1 1 100%;
+  }
 }
