@@ -338,11 +338,9 @@
 }
 
 .ceo {
-  display: table;
-  position: relative;
-  top: -2px;
-  left: 8px;
-  width: 90%;
+  display: block;
+  width: 150px;
+  margin: 0 auto;
 }
 .image.center {
   float: center;
@@ -396,6 +394,26 @@ td {
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
+}
+
+.profile-history {
+  padding: 0.5em 0.25em;
+}
+
+.profile-section-title {
+  margin: 0.8em 0 0.35em 0;
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #000;
+}
+
+.profile-list {
+  margin: 0 0 0.6em 1.2em;
+  line-height: 1.8;
+}
+
+.profile-list li {
+  margin-bottom: 0.1em;
 }
 
 table {
@@ -491,11 +509,11 @@ table ul .small {
 }
 
 /*********************************************************************************/
-/* ÏïÑÏπ¥Îç∞ÎØ∏                                                                        */
+/* ?ïÑÏπ¥Îç∞ÎØ?                                                                        */
 /*********************************************************************************/
 
 /*********************************************************************************/
-/* Ïª®ÏÑ§ÌåÖ                                                                        */
+/* Ïª®ÏÑ§?åÖ                                                                        */
 /*********************************************************************************/
 .consulting_box {
   border: 1px solid #dadada;
@@ -526,7 +544,7 @@ table ul .small {
   padding-left: 25px;
 }
 /*********************************************************************************/
-/* ÏÉâÏÉÅÎ∞ïÏä§                                                                        */
+/* ?Éâ?ÉÅÎ∞ïÏä§                                                                        */
 /*********************************************************************************/
 
 .bg_blue {
