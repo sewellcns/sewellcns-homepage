@@ -785,24 +785,34 @@ ul.list li:first-child {
 }
 
 .academy-overview-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 1.2em;
+  position: relative;
+  display: block;
+  margin-bottom: 0.35em;
 }
 
 .academy-overview-header h3 {
   font-size: 1.1em;
   font-weight: 700;
   color: #000;
-  margin: 0.05em 0 0 0;
+  margin: 0;
+  padding-right: 256px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .academy-overview-thumb {
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 240px;
+  max-width: 42%;
   height: auto;
   border: 1px solid #ececec;
+  z-index: 1;
+}
+
+.academy-overview > .academy-bullet-title:first-of-type {
+  margin-top: 0.2em;
 }
 
 .academy-bullet-title {
@@ -944,7 +954,7 @@ ul.list li:first-child {
   background: #fff;
 }
 
-/* ????: sub1_2 table.alt(th 1.1em??600??0.75em, ???? ?? ???? ???)?? ???? ?עק */
+/* ????: sub1_2 table.alt(th 1.1em??600??0.75em, ???? ?? ???? ???)?? ???? ??? */
 .academy-fee-table th,
 .academy-fee-table td {
   border: 1px solid #7f7f7f;
@@ -1089,5 +1099,22 @@ ul.list li:first-child {
   }
   .academy-guide-aside {
     flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .academy-overview-header h3 {
+    padding-right: 0;
+  }
+
+  .academy-overview-thumb {
+    position: static;
+    display: block;
+    max-width: 260px;
+    margin: 0.65em 0 0 auto;
+  }
+
+  .academy-overview-header {
+    margin-bottom: 0.65em;
   }
 }
