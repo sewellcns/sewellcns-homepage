@@ -78,6 +78,11 @@
   width: 1000px;
 }
 
+/* .container는 overflow:hidden ? 넓은 도표(120% + 음수 마진)는 잘림 방지 */
+#SubPageWide {
+  overflow: visible;
+}
+
 /* location Menu */
 .sub_location_wrap {
   position: relative;
@@ -257,7 +262,7 @@
   display: flex;
 }
 
-/* sub5_3(교육과정별 안내)에서만 가로폭을 넓게 사용 */
+/* sub5_3(?????????? ???)?????? ???????? ?а? ??? */
 body .academy-course-guide {
   width: 100%;
 }
