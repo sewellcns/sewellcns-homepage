@@ -262,6 +262,19 @@
   display: flex;
 }
 
+/* ??????? ????(sub5_1): ???? ?????? ???? 2???? ???? ?????? ???? */
+#SubPageWide.subpage-wide-vertical {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+#SubPageWide.subpage-wide-vertical > section {
+  width: 100%;
+  max-width: 100%;
+  flex: none;
+}
+
 /* sub5_3(?????????? ???)?????? ???????? ???? ??? */
 body .academy-course-guide {
   width: 100%;
@@ -780,7 +793,7 @@ ul.list li:first-child {
 }
 
 .academy-overview-header h3 {
-  font-size: 2.1em;
+  font-size: 1.1em;
   font-weight: 700;
   color: #000;
   margin: 0.05em 0 0 0;
@@ -794,7 +807,8 @@ ul.list li:first-child {
 
 .academy-bullet-title {
   margin: 0.8em 0 0.5em 0;
-  font-size: 2em;
+  font-size: 1.1em;
+  font-weight: 600;
   color: #000;
   line-height: 1.35;
 }
@@ -811,16 +825,16 @@ ul.list li:first-child {
 }
 
 .academy-course-block h4 {
-  font-size: 2.05em;
+  font-size: 1.1em;
   font-weight: 700;
   margin: 0.45em 0 0.42em 0;
   color: #000;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .academy-highlight {
-  font-size: 1.85em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 600;
   line-height: 1.45;
   margin: 0;
 }
@@ -836,10 +850,23 @@ ul.list li:first-child {
 
 .academy-basic-list li {
   list-style: disc;
-  font-size: 1.95em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 600;
   line-height: 1.4;
   margin-bottom: 0.1em;
+  color: #000;
+}
+
+.academy-main-second {
+  margin-top: 2.5em;
+  padding-top: 1.75em;
+  border-top: 1px solid #ddd;
+}
+
+.academy-merge-section-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0 0 1em 0;
   color: #000;
 }
 
@@ -872,8 +899,7 @@ ul.list li:first-child {
 }
 
 .academy-course-guide .academy-fee-table thead th {
-  /* ??? ?????? ????????? ????? */
-  padding: 12px 8px;
+  padding: 0.75em;
 }
 
 .academy-guide-top {
@@ -883,11 +909,11 @@ ul.list li:first-child {
 
 .academy-guide-top li {
   list-style: disc;
-  font-size: 1.35em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 600;
   color: #000;
-  line-height: 1.35;
-  margin-bottom: 0.25em;
+  line-height: 1.4;
+  margin-bottom: 0.1em;
 }
 
 .academy-guide-grid {
@@ -903,7 +929,7 @@ ul.list li:first-child {
 
 .academy-table-unit {
   text-align: right;
-  font-size: 0.95em;
+  font-size: 0.9em;
   color: #666;
   margin: 0 0 6px 0;
   font-weight: 700;
@@ -918,21 +944,32 @@ ul.list li:first-child {
   background: #fff;
 }
 
+/* ????: sub1_2 table.alt(th 1.1em??600??0.75em, ???? ?? ???? ???)?? ???? ?עק */
 .academy-fee-table th,
 .academy-fee-table td {
   border: 1px solid #7f7f7f;
-  padding: 10px 8px;
+  padding: 0.75em 0.65em;
   vertical-align: middle;
-  font-weight: 700;
   color: #000;
-  line-height: 1.25;
+  line-height: 1.45;
   word-break: keep-all;
 }
 
 .academy-fee-table thead th {
   background: #cfcfcf;
   text-align: center;
-  font-size: 1.05em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.academy-fee-table tbody td {
+  font-size: 1em;
+  font-weight: inherit;
+}
+
+.academy-fee-table thead th .academy-fee-accent {
+  font-size: 0.9em;
+  font-weight: 700;
 }
 
 .academy-fee-table thead th:nth-child(1) {
@@ -980,12 +1017,49 @@ ul.list li:first-child {
   margin-right: 10px;
 }
 
+.academy-aside-line-title {
+  display: block;
+  font-weight: 900;
+  color: #000;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.academy-aside-line-title i {
+  color: #8f0000;
+  font-size: 0.95em;
+  margin-right: 10px;
+}
+
+.academy-aside-combined {
+  margin-bottom: 12px;
+}
+
+.academy-aside-icon-inline {
+  color: #8f0000;
+  font-size: 0.95em;
+  margin-right: 8px;
+  vertical-align: -0.05em;
+}
+
+/* aside: ?? ??? ??? ??? ???? ??? */
+.academy-aside-one-box {
+  padding: 12px 14px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 .academy-aside-text {
   margin: 0 0 10px 0;
   color: #000;
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 1.45;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.academy-aside-text.academy-aside-one-box {
+  margin: 0 0 14px 0;
 }
 
 .academy-aside-list {
@@ -996,9 +1070,9 @@ ul.list li:first-child {
 .academy-aside-list li {
   list-style: disc;
   color: #0d61c9;
-  font-weight: 900;
-  font-size: 1.15em;
-  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 .academy-aside-block-spaced {
