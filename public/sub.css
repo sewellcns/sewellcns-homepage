@@ -381,9 +381,9 @@ body #SubPageWide .academy-course-guide {
 }
 
 .overview-intro {
-  font-size: 2em;
-  line-height: 1.45;
-  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: 600;
   color: #111;
   letter-spacing: -0.4px;
   margin-bottom: 1.25em;
@@ -411,6 +411,7 @@ body #SubPageWide .academy-course-guide {
 .overview-table td {
   border: 1px solid #b7b7b7;
   vertical-align: middle;
+  font-size: 1em;
   line-height: 1.35;
   padding: 10px 12px;
   color: #222;
@@ -431,7 +432,8 @@ body #SubPageWide .academy-course-guide {
 .competency-title {
   text-align: center !important;
   margin: 0 0 8px 0 !important;
-  font-size: 1.95em !important;
+  font-size: 1.1em !important;
+  font-weight: 700;
   color: #111;
   letter-spacing: -0.3px;
 }
@@ -439,8 +441,8 @@ body #SubPageWide .academy-course-guide {
 .competency-table thead th {
   color: #fff;
   text-align: center;
-  font-size: 1.25em;
-  font-weight: 700;
+  font-size: 1.1em;
+  font-weight: 600;
   padding: 11px 10px;
 }
 
@@ -456,7 +458,7 @@ body #SubPageWide .academy-course-guide {
 .competency-table tbody th {
   text-align: center;
   background: #efefef;
-  font-size: 1.03em;
+  font-size: 1em;
   font-weight: 700;
   color: #5b5b5f;
 }
@@ -479,7 +481,7 @@ body #SubPageWide .academy-course-guide {
 .competency-table li {
   list-style: disc;
   margin-bottom: 2px;
-  font-size: 0.96em;
+  font-size: 1em;
   line-height: 1.35;
 }
 
