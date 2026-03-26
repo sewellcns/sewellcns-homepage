@@ -78,6 +78,11 @@
   width: 1000px;
 }
 
+/* .container??? overflow:hidden ? ?????? ??????(120% + ?????? ????)??? ????? ????? */
+#SubPageWide {
+  overflow: visible;
+}
+
 /* location Menu */
 .sub_location_wrap {
   position: relative;
@@ -257,6 +262,34 @@
   display: flex;
 }
 
+/* ??????? ????(sub5_1): ???? ?????? ???? 2???? ???? ?????? ???? */
+#SubPageWide.subpage-wide-vertical {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+#SubPageWide.subpage-wide-vertical > section {
+  width: 100%;
+  max-width: 100%;
+  flex: none;
+}
+
+/* sub5_3(?????????? ???)?????? ???????? ???? ??? */
+body .academy-course-guide {
+  width: 100%;
+}
+
+body #SubPageWide .academy-course-guide {
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  body #SubPageWide {
+    padding: 5em 5em;
+  }
+}
+
 #container {
   display: flex;
 }
@@ -276,12 +309,14 @@
   flex: 1.3;
 }
 
-#Sub2Page {
+#Sub2Page,
+#Sub3Page {
   padding: 5em 5em;
   text-align: left;
 }
 #SubPage p .po,
-#Sub2Page p .po {
+#Sub2Page p .po,
+#Sub3Page p .po {
   color: #a21b40;
   font-size: 1.5em;
   font-weight: 700;
@@ -293,21 +328,208 @@
 }
 
 #SubPage h3,
-#Sub2Page h3 {
-  font-size: 2em;
+#Sub2Page h3,
+#Sub3Page h3 {
+  font-size: calc(2em - 2px);
   text-align: center;
 }
 #SubPage h4,
-#Sub2Page h4 {
+#Sub2Page h4,
+#Sub3Page h4 {
   font-size: 1.35em;
   font-weight: 700;
   margin: 1.5em 0 0.5em 0;
+}
+
+#SubPage > .center {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+#SubPage > .center > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#featured .container > .center {
+  width: 100%;
+  max-width: 100%;
+}
+
+#featured .container > .center > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#Sub2Page > .center,
+#Sub3Page > .center {
+  width: 100%;
+  max-width: 100%;
+}
+
+#Sub2Page > .center > img,
+#Sub3Page > .center > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 #Sub2Page h5 {
   font-size: 2em;
   margin-left: 120px;
   font-weight: 400;
+}
+
+#Sub2Page .nametest ol > li {
+  font-family: "NanumGothic", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #666666;
+  letter-spacing: -0.4px;
+}
+
+.sub2-overview {
+  display: block !important;
+  padding: 3.5em 0 4.5em 0 !important;
+}
+
+.overview-intro {
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #666666;
+  letter-spacing: -0.4px;
+  margin-bottom: 1.25em;
+}
+
+.overview-grid {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.overview-grid .overview-card:first-child {
+  flex: 4 1 0%;
+  min-width: 0;
+}
+
+.overview-grid .overview-card:last-child {
+  flex: 6 1 0%;
+  min-width: 0;
+}
+
+.overview-card {
+  flex: 1;
+}
+
+.overview-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #b7b7b7;
+}
+
+.overview-table th,
+.overview-table td {
+  border: 1px solid #b7b7b7;
+  vertical-align: middle;
+  font-size: 1em;
+  line-height: 1.35;
+  padding: 10px 12px;
+  color: #222;
+}
+
+.company-table th {
+  width: 130px;
+  text-align: center;
+  font-weight: 700;
+  background: #e6e6e6;
+}
+
+.company-table td {
+  background: #f8f8f8;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #555555;
+}
+
+.company-table th,
+.company-table td {
+  vertical-align: top;
+}
+
+.competency-title {
+  text-align: center !important;
+  margin: 0 0 8px 0 !important;
+  font-size: 1.1em !important;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.3px;
+}
+
+.competency-table thead th {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 11px 10px;
+}
+
+.competency-table thead th:first-child {
+  width: 31%;
+  background: #5f5f5f;
+}
+
+.competency-table thead th:last-child {
+  background: #f17912;
+}
+
+.competency-table tbody th {
+  text-align: center;
+  background: #efefef;
+  font-size: 1em;
+  font-weight: 700;
+  color: #5b5b5f;
+}
+
+.competency-table tbody th.accent-blue {
+  color: #0072d8;
+  font-weight: 800;
+}
+
+.competency-table tbody td {
+  background: #e9e6ef;
+  padding: 8px 12px 8px 18px;
+  font-size: 0.9em;
+}
+
+.competency-table ul {
+  margin: 0;
+  padding-left: 1.15em;
+}
+
+.competency-table li {
+  list-style: disc;
+  margin-bottom: 2px;
+  font-size: 1em;
+  line-height: 1.35;
+}
+
+.competency-footnote {
+  margin-top: 8px;
+  font-size: 0.86em;
+  color: #666;
+  line-height: 1.35;
 }
 
 /* Image */
@@ -338,11 +560,9 @@
 }
 
 .ceo {
-  display: table;
-  position: relative;
-  top: -2px;
-  left: 8px;
-  width: 90%;
+  display: block;
+  width: 150px;
+  margin: 0 auto;
 }
 .image.center {
   float: center;
@@ -396,6 +616,26 @@ td {
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
+}
+
+.profile-history {
+  padding: 0.5em 0.25em;
+}
+
+.profile-section-title {
+  margin: 0.8em 0 0.35em 0;
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #000;
+}
+
+.profile-list {
+  margin: 0 0 0.6em 1.2em;
+  line-height: 1.8;
+}
+
+.profile-list li {
+  margin-bottom: 0.1em;
 }
 
 table {
@@ -491,11 +731,11 @@ table ul .small {
 }
 
 /*********************************************************************************/
-/* ¾ÆÄ«µ¥¹Ì                                                                        */
+/* ???????                                                                        */
 /*********************************************************************************/
 
 /*********************************************************************************/
-/* ÄÁ¼³ÆÃ                                                                        */
+/* ?????                                                                        */
 /*********************************************************************************/
 .consulting_box {
   border: 1px solid #dadada;
@@ -526,7 +766,7 @@ table ul .small {
   padding-left: 25px;
 }
 /*********************************************************************************/
-/* »ö»ó¹Ú½º                                                                        */
+/* ????????                                                                        */
 /*********************************************************************************/
 
 .bg_blue {
@@ -565,4 +805,380 @@ ul.list li:first-child {
   font-weight: 700;
   vertical-align: middle;
   text-align: center;
+}
+
+.academy-overview {
+  width: 100%;
+}
+
+.academy-overview-header {
+  position: relative;
+  display: block;
+  margin-bottom: 0.35em;
+}
+
+.academy-overview-header h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  padding-right: 256px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.academy-overview-thumb {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 240px;
+  max-width: 42%;
+  height: auto;
+  border: 1px solid #ececec;
+  z-index: 1;
+}
+
+.academy-overview > .academy-bullet-title:first-of-type {
+  margin-top: 0.2em;
+}
+
+.academy-bullet-title {
+  margin: 0.8em 0 0.5em 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.35;
+}
+
+.academy-bullet-title i {
+  color: #8f0000;
+  font-size: 0.85em;
+  margin-right: 10px;
+}
+
+.academy-course-block {
+  margin: 0 0 1.15em 0;
+  padding-left: 1.8em;
+}
+
+.academy-course-block h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0.45em 0 0.42em 0;
+  color: #000;
+  line-height: 1.35;
+}
+
+.academy-highlight {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.academy-spaced {
+  margin-top: 1.1em;
+}
+
+.academy-basic-list {
+  margin: 0.2em 0 0 3.3em;
+  padding: 0;
+}
+
+.academy-basic-list li {
+  list-style: disc;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.1em;
+  color: #000;
+}
+
+.academy-main-second {
+  margin-top: 2.5em;
+  padding-top: 1.75em;
+  border-top: 1px solid #ddd;
+}
+
+.academy-merge-section-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+  color: #000;
+}
+
+.academy-course-guide {
+  width: 100%;
+}
+
+.academy-course-guide {
+  /* sub5_3 ?????????? ??????? ???????? ???? ???? */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.academy-course-guide .academy-guide-grid {
+  /* ???? ??? ?????? ????? ?????? ???? ?? ???? */
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.academy-course-guide .academy-guide-aside {
+  order: 3;
+  flex: 1 1 100%;
+  min-width: 0;
+  padding-top: 18px;
+}
+
+.academy-course-guide .academy-guide-tables {
+  flex: 1 1 460px;
+  width: auto;
+}
+
+.academy-course-guide .academy-fee-table thead th {
+  padding: 0.75em;
+}
+
+.academy-guide-top {
+  margin: 0 0 1.4em 1.25em;
+  padding: 0;
+}
+
+.academy-guide-top li {
+  list-style: disc;
+  font-size: 1em;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 0.1em;
+}
+
+.academy-guide-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.academy-guide-tables {
+  width: 345px;
+  flex: 0 0 345px;
+}
+
+.academy-table-unit {
+  text-align: right;
+  font-size: 0.9em;
+  color: #666;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.academy-fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #7f7f7f;
+  margin: 0;
+  background: #fff;
+}
+
+/* ????: sub1_2 table.alt(th 1.1em??600??0.75em, ???? ?? ???? ???)?? ???? ??? */
+.academy-fee-table th,
+.academy-fee-table td {
+  border: 1px solid #7f7f7f;
+  padding: 0.75em 0.65em;
+  vertical-align: middle;
+  color: #000;
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
+.academy-fee-table thead th {
+  background: #cfcfcf;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.academy-fee-table tbody td {
+  font-size: 1em;
+  font-weight: inherit;
+}
+
+.academy-fee-table thead th .academy-fee-accent {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.academy-fee-table thead th:nth-child(1) {
+  width: 46%;
+}
+
+.academy-fee-table thead th:nth-child(2) {
+  width: 14%;
+}
+
+.academy-fee-table thead th:nth-child(3),
+.academy-fee-table thead th:nth-child(4) {
+  width: 20%;
+}
+
+.academy-fee-accent {
+  color: #b00000;
+  font-weight: 800;
+}
+
+.academy-cell-center {
+  text-align: center;
+}
+
+.academy-guide-aside {
+  flex: 1;
+  min-width: 240px;
+  padding-top: 22px;
+}
+
+.academy-aside-block {
+  padding: 6px 0;
+}
+
+.academy-aside-title {
+  font-weight: 900;
+  color: #000;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.academy-aside-title i {
+  color: #8f0000;
+  font-size: 0.95em;
+  margin-right: 10px;
+}
+
+.academy-aside-line-title {
+  display: block;
+  font-weight: 900;
+  color: #000;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.academy-aside-line-title i {
+  color: #8f0000;
+  font-size: 0.95em;
+  margin-right: 10px;
+}
+
+.academy-aside-combined {
+  margin-bottom: 12px;
+}
+
+.academy-aside-icon-inline {
+  color: #8f0000;
+  font-size: 0.95em;
+  margin-right: 8px;
+  vertical-align: -0.05em;
+}
+
+/* aside: ?? ??? ??? ??? ???? ??? */
+.academy-aside-one-box {
+  padding: 12px 14px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.academy-aside-text {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-size: 1em;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.academy-aside-text.academy-aside-one-box {
+  margin: 0 0 14px 0;
+}
+
+.academy-aside-list {
+  margin: 0 0 0 1.1em;
+  padding: 0;
+}
+
+.academy-aside-list li {
+  list-style: disc;
+  color: #0d61c9;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.academy-aside-block-spaced {
+  margin-top: 18px;
+}
+
+@media (max-width: 1100px) {
+  .academy-guide-grid {
+    flex-wrap: wrap;
+  }
+  .academy-guide-tables {
+    flex: 1 1 420px;
+    width: auto;
+  }
+  .academy-guide-aside {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .academy-overview-header h3 {
+    padding-right: 0;
+  }
+
+  .academy-overview-thumb {
+    position: static;
+    display: block;
+    max-width: 260px;
+    margin: 0.65em 0 0 auto;
+  }
+
+  .academy-overview-header {
+    margin-bottom: 0.65em;
+  }
+}
+
+/*********************************************************************************/
+/* sub4_1.html â€” vertical spacing (half of defaults)                             */
+/*********************************************************************************/
+
+body.page-sub4-1 #Title_banner_sub4 {
+  padding: 1.75em 0em;
+}
+
+body.page-sub4-1 .sub_title {
+  margin-bottom: 0.5em;
+}
+
+body.page-sub4-1 #SubPage {
+  padding: 2.5em 0em;
+}
+
+body.page-sub4-1 #featured {
+  padding: 2.5em 0em;
+}
+
+body.page-sub4-1 #Sub2Page,
+body.page-sub4-1 #Sub3Page {
+  padding: 2.5em 2.5em;
+}
+
+body.page-sub4-1 .title {
+  margin-bottom: 1.5em;
+}
+
+body.page-sub4-1 #featured .button {
+  margin-top: 1.5em;
+}
+
+body.page-sub4-1 #copyright {
+  padding: 2.5em 0em;
 }
