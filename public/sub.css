@@ -397,7 +397,7 @@ body #SubPageWide .academy-course-guide {
   font-size: 1.1em;
   line-height: 1.5;
   font-weight: 600;
-  color: #111;
+  color: #666666;
   letter-spacing: -0.4px;
   margin-bottom: 1.25em;
 }
@@ -405,7 +405,17 @@ body #SubPageWide .academy-course-guide {
 .overview-grid {
   display: flex;
   gap: 22px;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.overview-grid .overview-card:first-child {
+  flex: 4 1 0%;
+  min-width: 0;
+}
+
+.overview-grid .overview-card:last-child {
+  flex: 6 1 0%;
+  min-width: 0;
 }
 
 .overview-card {
@@ -440,6 +450,13 @@ body #SubPageWide .academy-course-guide {
 .company-table td {
   background: #f8f8f8;
   font-weight: 700;
+  font-size: 0.9em;
+  color: #555555;
+}
+
+.company-table th,
+.company-table td {
+  vertical-align: top;
 }
 
 .competency-title {
@@ -484,6 +501,7 @@ body #SubPageWide .academy-course-guide {
 .competency-table tbody td {
   background: #e9e6ef;
   padding: 8px 12px 8px 18px;
+  font-size: 0.9em;
 }
 
 .competency-table ul {
