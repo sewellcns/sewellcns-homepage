@@ -330,7 +330,7 @@ body #SubPageWide .academy-course-guide {
 #SubPage h3,
 #Sub2Page h3,
 #Sub3Page h3 {
-  font-size: 2em;
+  font-size: calc(2em - 2px);
   text-align: center;
 }
 #SubPage h4,
@@ -386,6 +386,15 @@ body #SubPageWide .academy-course-guide {
   font-size: 2em;
   margin-left: 120px;
   font-weight: 400;
+}
+
+#Sub2Page .nametest ol > li {
+  font-family: "NanumGothic", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #666666;
+  letter-spacing: -0.4px;
 }
 
 .sub2-overview {

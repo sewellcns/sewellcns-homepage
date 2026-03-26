@@ -298,8 +298,8 @@ ul.contact li a.icon-rss:before {
 
 .title h3 {
   text-transform: none;
-  font-size: 1.8em;
-  color: #000;
+  font-size: calc(1.8em - 2px);
+  color: #262626;
   font-weight: 700;
   letter-spacing: -0.8px;
 }
