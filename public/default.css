@@ -581,13 +581,13 @@ ul.contact li a.icon-rss:before {
 #featured {
   overflow: hidden;
   padding: 5em 0em;
-  background: #e4e4e4;
-  color: rgba(255, 255, 255, 0.8);
+  background: #fff;
+  color: #333;
   text-align: center;
 }
 
 #featured a {
-  color: rgba(255, 255, 255, 1);
+  color: #a62723;
 }
 
 #featured .button {
@@ -601,11 +601,11 @@ ul.contact li a.icon-rss:before {
 }
 
 #featured .title h2 {
-  color: #fff;
+  color: #000;
 }
 
 #featured .title .byline {
-  color: rgba(255, 255, 255, 0.6);
+  color: #666;
 }
 
 /*********************************************************************************/

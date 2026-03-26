@@ -78,7 +78,7 @@
   width: 1000px;
 }
 
-/* .container는 overflow:hidden ? 넓은 도표(120% + 음수 마진)는 잘림 방지 */
+/* .container??? overflow:hidden ? ?????? ??????(120% + ?????? ????)??? ????? ????? */
 #SubPageWide {
   overflow: visible;
 }
@@ -262,7 +262,7 @@
   display: flex;
 }
 
-/* sub5_3(?????????? ???)?????? ???????? ?а? ??? */
+/* sub5_3(?????????? ???)?????? ???????? ???? ??? */
 body .academy-course-guide {
   width: 100%;
 }
@@ -296,12 +296,14 @@ body #SubPageWide .academy-course-guide {
   flex: 1.3;
 }
 
-#Sub2Page {
+#Sub2Page,
+#Sub3Page {
   padding: 5em 5em;
   text-align: left;
 }
 #SubPage p .po,
-#Sub2Page p .po {
+#Sub2Page p .po,
+#Sub3Page p .po {
   color: #a21b40;
   font-size: 1.5em;
   font-weight: 700;
@@ -313,15 +315,58 @@ body #SubPageWide .academy-course-guide {
 }
 
 #SubPage h3,
-#Sub2Page h3 {
+#Sub2Page h3,
+#Sub3Page h3 {
   font-size: 2em;
   text-align: center;
 }
 #SubPage h4,
-#Sub2Page h4 {
+#Sub2Page h4,
+#Sub3Page h4 {
   font-size: 1.35em;
   font-weight: 700;
   margin: 1.5em 0 0.5em 0;
+}
+
+#SubPage > .center {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+#SubPage > .center > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#featured .container > .center {
+  width: 100%;
+  max-width: 100%;
+}
+
+#featured .container > .center > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#Sub2Page > .center,
+#Sub3Page > .center {
+  width: 100%;
+  max-width: 100%;
+}
+
+#Sub2Page > .center > img,
+#Sub3Page > .center > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 #Sub2Page h5 {
